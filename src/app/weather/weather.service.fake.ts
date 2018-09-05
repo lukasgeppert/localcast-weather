@@ -1,6 +1,6 @@
 import { ICurrentWeather } from '../interfaces'
 import { IWeatherService } from './weather.service'
-import { Observable, of } from 'rxjs';
+import { Observable, of } from 'rxjs'
 
 export class WeatherServiceFake implements IWeatherService {
   private fakeWeather: ICurrentWeather = {
