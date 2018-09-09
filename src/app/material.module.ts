@@ -9,8 +9,22 @@ import {
 } from '@angular/material'
 
 @NgModule({
-  imports: [MatButtonModule, MatIconModule, MatToolbarModule, MatCardModule, MatFormFieldModule, MatInputModule],
-  exports: [MatButtonModule, MatIconModule, MatToolbarModule, MatCardModule, MatFormFieldModule, MatInputModule],
+  imports: [
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+  ],
+  exports: [
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
+  ],
   declarations: [],
 })
 export class MaterialModule {}

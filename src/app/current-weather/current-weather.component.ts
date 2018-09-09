@@ -8,7 +8,8 @@ import { WeatherService } from '../weather/weather.service'
   styleUrls: ['./current-weather.component.css'],
 })
 export class CurrentWeatherComponent implements OnInit {
-  @Input() current: ICurrentWeather
+  @Input()
+  current: ICurrentWeather
   constructor(private weatherService: WeatherService) {
     this.current = {
       city: '',

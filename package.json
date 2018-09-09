@@ -1,7 +1,7 @@
 {
   "name": "localcast-weather",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "standardize": "prettier '**/*.ts' --write",
@@ -18,7 +18,7 @@
     "docker:run": "run-s -c docker:clean docker:runHelper",
     "docker:runHelper": "cross-conf-env docker run -e NODE_ENV=local --name $npm_package_config_imageName -d -p $npm_package_config_imagePort:3000 $npm_package_config_imageRepo",
     "predocker:publish": "echo Attention! Ensure `docker login` is correct.",
-    "docker:publish": "cross-conf-env docker image push $npm_package_config_imageRepo:$npm_package_version",
+    "docker:publish": "docker image push $npm_package_config_imageRepo:$npm_package_version",
     "postdocker:publish": "cross-conf-env docker image push $npm_package_config_imageRepo:latest",
     "docker:clean": "cross-conf-env docker rm -f $npm_package_config_imageName",
     "predocker:taillogs": "echo Web Server Logs:",
