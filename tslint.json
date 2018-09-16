@@ -29,7 +29,7 @@
     "label-position": true,
     "max-line-length": [
       true,
-      140
+      120
     ],
     "member-access": false,
     "member-ordering": [
@@ -95,10 +95,6 @@
     "triple-equals": [
       true,
       "allow-null-check"
-    ],
-    "max-line-length": [
-      true,
-      120
     ],
     "typedef-whitespace": [
       true,
